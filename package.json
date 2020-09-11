@@ -1,0 +1,16 @@
+{
+  "name": "node_examples",
+  "version": "0.0.1",
+  "description": "My First Node Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eric Schorling",
+  "license": "ISC",
+  "dependencies": {
+    "bl": "^4.0.3",
+    "cowsay": "^1.4.0",
+    "through2-map": "^3.0.0"
+  }
+}

@@ -1,0 +1,5 @@
+const fs = require('fs')
+const a_file = fs.readFileSync(process.argv[2]).toString()
+//console.log(a_file)
+let stringArr = a_file.split('\n')
+console.log(stringArr.length-1)
