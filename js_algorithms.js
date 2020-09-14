@@ -139,11 +139,11 @@ function pig_latin (str){
     else {
         for(let i = 0; i < strArr.length; i++){
             if(vowelArr.indexOf(strArr[i].toLowerCase()) === -1){
-                console.log(strArr)
+                //console.log(strArr)
                 holderArr.push(strArr[i])
             }
             else{
-                console.log(strArr.splice(0,i))
+                //console.log(strArr.splice(0,i))
                 break;
             }
         }
@@ -152,4 +152,40 @@ function pig_latin (str){
     return returnStr
 }
 
-console.log(pig_latin('glaway'))
+//console.log(pig_latin('schwartz'))
+
+// get it to 1
+const get_it_to_1 = (num) => {
+    if (num < 10)
+    {return num}
+    else {
+        let numArr = String(num).split('')
+        console.log(numArr)
+        returnNum = numArr.reduce((inc, num)=>{
+            return Number(inc) + Number(num)
+        })
+        console.log(num, returnNum)
+        return get_it_to_1( returnNum)
+    }
+}
+
+//console.log(get_it_to_1(215478895559655412))
+
+
+function its_weird (num){
+    if (num % 2 !== 0){
+        return 'Weird'
+    }
+    else {
+        if(num >= 2 && num <=5){
+            return 'Not Weird'
+        }
+        if (num >= 6 && num <= 20){
+            return 'Weird'
+        }
+        else{
+            return 'Not Weird'
+        }
+    }
+}
+console.log(its_weird(4))
